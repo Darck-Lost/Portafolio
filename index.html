@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portafolio</title>
+  </head>
+  <body class="dark">
+    <header class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img 
+            id="toggle-icon"
+            src="assets/icons/moon.svg" 
+            alt="icon theme" 
+            class="toggle-theme__icon" 
+          />
+          <p id="toggle-text" class="toggle-theme__text">Darck Mode</p>
+        </div>
+      </div>
+      <div id="flags" class="flags">
+        <div class="flags__item" data-language="es">
+          <img src="assets/icons/mx.svg" alt="" />
+        </div>
+        <div class="flags__item" data-language="en">
+          <img src="assets/icons/us.svg" alt="" />
+        </div>
+      </div>
+      <div id="toggle-colors" class="colors">
+        <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+        <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+        <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+        <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="column column--left">
+        <!--{Profile Card}-->
+        <article class="card card--profile">
+          <div class="card__image-container"><img src="assets/images/profile.jpg" alt=""></div>
+          <div class="card__header">
+            <h2 class="card__title">Fernando Mendoza Tobon</h2>
+            <p class="card__subtitle">Desarrollador Front-end</p>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:darcklost1987@gmail.com">
+              darcklost1987@gmail.com
+            </a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i>
+            <a href="tel:2381158402">
+              +52-2381158402
+            </a>
+          </div>
+          <p class="card__text">
+            Soy un TSU en Tecnologías de la Información área en Redes Digitales, Soy aficionado a la tecnología y a la programación, planteo la posibilidad de crecer en el conocimiento en ciberseguridad.
+          </p>
+        </article>
+        <article class="card card--experience">
+          <h2 class="card__title">Experiencias</h2>
+          <div class="experience"><img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                Agosto 2023 - Actualmente
+              </p>
+              <h3 class="experience__job">Portafolio</h3>
+              <p class="experinece__description">Este es un proyecto personal el cual ire mejorando constantemente con los nuevas tecnologias y practicas que valla aprendiendo a lo largo de mis experiencias en proyectos e investigaciones de nuevas tecnlogias.
+              </p>
+            </div>
+          </div>
+          <div class="experience"><img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                Agosto 2023 - Septiembre 2023
+              </p>
+              <h3 class="experience__job">DBE Telecomunicaciones</h3>
+              <p class="experinece__description">Fue nuestro proyecto de estadia en el que desarrollamos una pagina web para la empresa BDE Telecomunicaciones donde se da la informacion de la empresa y los productos que ofrece, asi como una forma de comunicarse con la empresa para adquirir uno de los productos que ofrece.
+              </p>
+            </div>
+          </div>
+          <div class="experience"><img src="assets/images/logo.png" alt="logo" class="experience__image">
+            <div class="experience__info">
+              <p class="experience__time">
+                Abril 2022 - Agosto 2022
+              </p>
+              <h3 class="experience__job">Citrus</h3>
+              <p class="experinece__description">Fue un proyecto final para un invernadero local, con la coperacion de mis compañeros de universidad, en este proyecto se puso a prueba nuestros conocimientos en HTTP y CSS, siendo una de nuestros primeras paginas web.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="card card--hobies">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie-1.jpg" alt="Programación">
+          </div>
+          <h3 class="hobbie__title">programación</h3>
+          <p class="card__text">Por lo que se aprecia en esta pagina y en otros proyecto me agrada mucho la programacion en diferentes tecnologias y en diferentes metodologias asi como usar nuevas practicas e ir mejorando cada ves mas en mis proyectos siguientes.</p>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie-2.jpg" alt="Criptografía">
+          </div>
+          <h3 class="hobbie__title">Criptografía</h3>
+          <p class="card__text">Me agrada el tema de la criptografia, como desifrar un mensaje usando diferentes metodos pero mas que nada la satisfaccion por resolver el misterio</p>
+          <div class="card__image-container">
+            <img src="assets/images/hobbie-3.jpg" alt="Robótica">
+          </div>
+          <h3 class="hobbie__title">Robótica</h3>
+          <p class="card__text">Me intriga el tema de la robotica mas que nada de los sistemas multifuncionales como los carros a control remoto con varias funciones integradas.</p>
+        </article>
+      </section>
+      <section class="column column--right">
+        <article class="card">
+          <h2 class="card__title">Front-End</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+            <div class="skills__header">
+              <span class="skills__start-level">0</span>
+              <span class="skills__start-level">5</span>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+                <p class="skills__tech">HTML</p>
+                <div class="skills__bar skills__bar--50"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">CSS</p>
+                <div class="skills__bar skills__bar--50"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">JavaScritp</p>
+                <div class="skills__bar skills__bar--20"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">Python</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">React</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Back-End</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+            <div class="skills__header">
+              <span class="skills__start-level">0</span>
+              <span class="skills__start-level">5</span>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+                <p class="skills__tech">MySql</p>
+                <div class="skills__bar skills__bar--30"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">Apache</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">PHP</p>
+                <div class="skills__bar skills__bar--20"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2 class="card__title">Multimedia</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+            <div class="skills__header">
+              <span class="skills__start-level">0</span>
+              <span class="skills__start-level">5</span>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+                <p class="skills__tech">Microsoft Office</p>
+                <div class="skills__bar skills__bar--80"></div>
+              </div>
+              <div class="skills__item">
+                <p class="skills__tech">Filmora</p>
+                <div class="skills__bar skills__bar--10"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">#JavaScript</span>
+              <span class="project__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Pagina Web Portafolio</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">#JavaScript</span>
+              <span class="project__tag">#PHP</span>
+            </div>
+            <h2 class="card__title">Pagina Web DBE Telecomunicaciones</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img src="assets/images/project.jpg" alt="Landing Page" class="card__image">
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Pagina Web Citrus</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet nihil earum vel alias fugiat soluta maiores ipsum, dignissimos quaerat cupiditate excepturi labore repudiandae, architecto quam magni sapiente modi cumque veritatis! Cumque eligendi vero officiis ab iure omnis neque, praesentium consequuntur architecto perferendis quod aliquam perspiciatis, sapiente voluptatum unde reiciendis? Accusantium magni dolore molestias quaerat, minima officia, cum deserunt illo dolorum impedit id labore earum corrupti quidem alias modi minus.</p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
