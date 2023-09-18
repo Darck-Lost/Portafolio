@@ -85,7 +85,7 @@ body.dark{
 
 .flags__item:hover{
     cursor: pointer;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: var(--box-shadow-color);
 }
 
