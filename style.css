@@ -105,6 +105,14 @@ ul {
     padding-left: 20px;
 }
 
+h3 {
+    color: #38bdf8;
+}
+
+a {
+    color: #38bdf8;
+}
+
 @keyframes typing {
     to {
         width: 100%;
