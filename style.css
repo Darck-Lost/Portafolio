@@ -61,6 +61,66 @@ a {
     color: #94a3b8;
 }
 
+/* TERMINAL */
+.terminal {
+    background: #020617;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #1e293b;
+    padding: 10px;
+}
+
+.terminal-header span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.terminal-header span:nth-child(1){ background: red; }
+.terminal-header span:nth-child(2){ background: yellow; }
+.terminal-header span:nth-child(3){ background: green; }
+
+.terminal-body {
+    padding: 20px;
+    color: #38bdf8;
+}
+
+.prompt {
+    color: #22c55e;
+}
+
+.status {
+    color: #4ade80;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.online {
+    color: #4ade80;
+}
+
 /* TECNOLOGÍAS */
 .tech {
     display: flex;
@@ -139,4 +199,25 @@ a {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(56,189,248,0.15), transparent);
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(56,189,248,0.15), transparent);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
 }
