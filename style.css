@@ -97,6 +97,14 @@ h2 {
     animation: typing 3s steps(30, end) forwards;
 }
 
+ul {
+    line-height: 1.8;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
 @keyframes typing {
     to {
         width: 100%;
