@@ -66,3 +66,39 @@ h2 {
         font-size: 2rem;
     }
 }
+
+/* ANIMACIONES */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+.typing {
+    border-right: 2px solid #38bdf8;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    to {
+        width: 100%;
+    }
+}
