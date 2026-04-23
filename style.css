@@ -1,8 +1,37 @@
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    scroll-margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: #e2e8f0;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+h3 {
+    color: #38bdf8;
+}
+
+a {
+    color: #38bdf8;
 }
 
 /* HERO */
@@ -21,16 +50,15 @@ body {
     color: #94a3b8;
 }
 
-/* SECCIONES */
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+.hero-sub {
+    color: #38bdf8;
+    font-weight: bold;
 }
 
-h2 {
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
+.hero-desc {
+    max-width: 600px;
+    margin: 10px auto;
+    color: #94a3b8;
 }
 
 /* TECNOLOGÍAS */
@@ -60,23 +88,14 @@ h2 {
     transform: translateY(-5px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
+.card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #94a3b8;
 }
 
-/* ANIMACIONES */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.card ul {
+    padding-left: 20px;
 }
 
 .card:hover {
@@ -97,24 +116,27 @@ h2 {
     animation: typing 3s steps(30, end) forwards;
 }
 
-ul {
-    line-height: 1.8;
-}
-
-.card ul {
-    padding-left: 20px;
-}
-
-h3 {
-    color: #38bdf8;
-}
-
-a {
-    color: #38bdf8;
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
 
 @keyframes typing {
     to {
         width: 100%;
     }
+}
+
+/* ANIMACIONES */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
