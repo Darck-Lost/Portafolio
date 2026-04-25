@@ -10,9 +10,9 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="cursor-glow"></div>
     <header class="hero">
-        <h1>Fernando Mendoza</h1>
+        <h1>Fernando Mendoza Tobón</h1>
         <p class="hero-sub">
             Soporte TI | Redes | Monitoreo de Infraestructura
         </p>
@@ -24,7 +24,6 @@
             <a href="https://github.com/Darck-Lost" target="_blank" class="btn">
                 Ver GitHub
             </a>
-            <p>|</p>
             <a href="CV.pdf" download class="btn secondary">
                 Descargar CV
             </a>
@@ -35,16 +34,12 @@
         <div class="terminal-header">
             <span></span><span></span><span></span>
         </div>
-        <div class="terminal-body">
-            <p><span class="prompt">$</span> whoami</p>
-            <p>fernando_mendoza</p>
-            <p><span class="prompt">$</span> skills</p>
-            <p>linux networking zabbix git ssh</p>
-            <p><span class="prompt">$</span> status</p>
-            <p class="status">Available for work</p>
-            <p><span class="prompt">$</span> uptime</p>
-            <p>System running: 99.9% uptime</p>
-        </div>
+        <div class="terminal-body" id="terminal"></div>
+    </section>
+
+    <section class="logs fade-in">
+        <h2>Actividad del sistema</h2>
+        <div id="logs"></div>
     </section>
 
     <section class="fade-in">
@@ -76,11 +71,11 @@
     <section class="fade-in">
         <h2>Tecnologías</h2>
         <div class="tech">
-            <span>Linux</span>
-            <span>Redes</span>
-            <span>Zabbix</span>
-            <span>Git</span>
-            <span>SSH</span>
+            <span><i class="fa-brands fa-linux"></i> Linux</span>
+            <span><i class="fa-solid fa-network-wired"></i> Redes</span>
+            <span><i class="fa-solid fa-chart-line"></i> Zabbix</span>
+            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span><i class="fa-solid fa-terminal"></i> SSH</span>
         </div>
     </section>
 
@@ -95,8 +90,7 @@
 
     <section id="proyectos" class="fade-in">
         <h2>Proyectos</h2>
-
-        <div class="card fade-in">
+        <div class="card">
             <h3>Red de Intercambio Seguro (RIS)</h3>
             <p>
                 Implementación de solución de sincronización segura en red local
@@ -149,10 +143,11 @@
 
     <section id="contacto" class="fade-in">
         <h2>Contacto</h2>
-        <a href="mailto:tuemail@email.com" class="btn">
+        <a href="mailto:darcklost1987@gmail.com" class="btn">
             Enviar correo
         </a>
         <p>Numero Telefonico: +52 2361054064</p>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

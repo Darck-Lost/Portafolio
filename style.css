@@ -61,6 +61,11 @@ a {
     color: #94a3b8;
 }
 
+/* BUTTONS */
+.buttons a {
+    margin: 0 10px;
+}
+
 /* TERMINAL */
 .terminal {
     background: #020617;
@@ -89,8 +94,7 @@ a {
 .terminal-header span:nth-child(3){ background: green; }
 
 .terminal-body {
-    padding: 20px;
-    color: #38bdf8;
+    line-height: 1.6;
 }
 
 .prompt {
@@ -99,6 +103,41 @@ a {
 
 .status {
     color: #4ade80;
+}
+
+.logs {
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    font-family: monospace;
+    color: #22c55e;
+}
+
+.logs p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* NETWORK ACTIVITY */
+
+.network-dot {
+    width: 6px;
+    height: 6px;
+    background: #38bdf8;
+    border-radius: 50%;
+    position: fixed;
+    animation: float 5s linear;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
 }
 
 /* DASHBOARD */
@@ -144,18 +183,10 @@ a {
     transition: transform 0.2s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
 .card ul {
     margin-top: 10px;
     padding-left: 20px;
     color: #94a3b8;
-}
-
-.card ul {
-    padding-left: 20px;
 }
 
 .card:hover {
@@ -201,23 +232,13 @@ a {
     transform: translateY(0);
 }
 
-body::after {
-    content: "";
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(56,189,248,0.15), transparent);
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-}
-
 .cursor-glow {
     position: fixed;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(56,189,248,0.15), transparent);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56,189,248,0.2), transparent);
     pointer-events: none;
     transform: translate(-50%, -50%);
+    filter: blur(10px);
 }
